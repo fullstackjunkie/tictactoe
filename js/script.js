@@ -115,6 +115,7 @@ function GameController(nGameboard) {
         console.log(currPlayer);
         let mBoard = document.querySelector("#game-board");
         let score = document.querySelector(".score");
+        
         mBoard.addEventListener("click", (e) => {
             let pos = e.target.dataset.position.split("");
             e.target.innerText = currPlayer.symbol;
